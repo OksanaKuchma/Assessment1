@@ -95,6 +95,7 @@ ggplot(Mcdonalds, aes(x = sugar, y = protein)) +
  #Assessmet part 3
 
 ```{r factor}
+
 class (fastfood$restaurant)  
 fastfood2 <- as_factor(fastfood$restaurant)
 calories_type <- cut_number(fastfood$calories, n = 3, labels=c("low", "med", "high"))
